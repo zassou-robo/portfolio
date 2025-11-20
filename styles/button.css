@@ -1,0 +1,42 @@
+
+.twitter-btn{
+    margin-left: auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background-color: #1DA1F2;
+    color: #fff;
+    border-radius: 50%;
+    text-decoration: none;
+}
+.twitter-btn i{
+    font-size: 18px;
+    line-height: 1;
+}
+.twitter-btn:hover{
+    background-color: #0d8bd6;
+}
+.github-btn{
+    margin-left: 12px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 50%;
+    text-decoration: none;
+}
+.github-btn i{
+    font-size: 18px;
+    line-height: 1;
+}
+.github-btn:hover{
+    background-color: #242424;
+}
+.NullTasker_modal{
+    cursor: pointer;
+}
