@@ -9,7 +9,7 @@
     --sub-bg-color: #ffffff;
     --accent-bg-color: #e0e0e0;
 
-    --main-color: #333333;
+    --main-color: #0000ff;
     --sub-color: #666666;
     --accent-color: #999999;
 
@@ -24,6 +24,6 @@ html{
     background-color: var(--main-bg-color);
 }
 body{
-    color: var(--main-text-color);
+    color: var(--main-color);
     line-height: 1.6;
 }

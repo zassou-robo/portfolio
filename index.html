@@ -9,9 +9,8 @@
     <title>zassou | Portfolio</title>
     <link rel="icon" href="./src/assets/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="./src/assets/zassou-icon.jpg">
-    <link rel="stylesheet" href="src/styles/base.css">
-    <link rel="stylesheet" href="src/styles/page_layout.css">
-    <!-- <link rel="stylesheet" href="src/styles/button.css"> -->
+    <link rel="stylesheet" href="./src/styles/base.css">
+    <link rel="stylesheet" href="./src/styles/page_layout.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://use.fontawesome.com/releases/v7.1.0/css/all.css" rel="stylesheet">
 </head>
@@ -19,15 +18,41 @@
     <div class="header">
         <h1>zassou's Portfolio</h1>
         <nav>
-            <a href="#about">About Me</a>
-            <a href="career">Career</a>
-            <a href="skills">Skills</a>
+            <a href="#aboutme">About Me</a>
+            <a href="#career">Career</a>
+            <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
         </nav>
     </div>
     <div class="main">
-        <img src="./src/assets/favicon.ico">
+        <div class="aboutme" id="aboutme">
+            <img src="./src/assets/favicon.ico" class="favicon">
+        </div>
+        <div class="career" id="career">
+        </div>
+        <div class="skills" id="skills">
+            <div class="frontend">
+                <img src="./src/assets/html.png" class="html">
+                <a>html</a>
+                <img src="./src/assets/css.png" class="css">
+                <a>css</a>
+                <img src="./src/assets/javascript.png" class="js">
+                <a>js</a>
+            </div>
+            <div class="backend">
+                <img src="./src/assets/cpp.png" class="cpp">
+                <a>cpp</a>
+                <img src="./src/assets/python.png" class="python">
+                <a>python</a>
+            </div>
+            <div class="devtool">
+            </div>
+        </div>
+        <div class="projects" id="projects">
+        </div>
+        <div class="contact" id="contact">
+        </div>
     </div>
     <div class="footer">
         <p>&copy; 2024 zassou. All rights reserved.</p>
