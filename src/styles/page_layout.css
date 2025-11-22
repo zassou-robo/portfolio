@@ -1,22 +1,4 @@
-.header {
-    background-color: var(--main-bg-color);/*背景色設定*/
-    padding: 20px;/* 要素と境界の距離指定*/
-    text-align: center;/*テキストの位置指定*/
-    font-size: 16px;/*フォントサイズ指定*/
-    color: var(--main-text-color);/*文字カラー設定*/  
-    display: flex;/**/
-    justify-content: center;/**/
-    align-items: center;/**/
-    position: fixed/**/
-}
-.main{
-    padding:20px;
-    position:sticky
-}
-.footer{
-    position:relative;
-    display: flex;
-}
-.favicon{
+.header{
+    background-color: var(--main-bg-color);
     display: flex;
 }

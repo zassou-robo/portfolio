@@ -1,0 +1,24 @@
+.skill_lang{
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+}
+.html{
+    background-color: #f54927;
+    width: 110px;
+    height: 110px;
+}
+.css{
+    background-color: #663399;
+}
+.js{
+    background-color: #f0dB4f;
+}
+.cpp{
+    background-color: #00599c;
+}
+.py{
+    background-color: #4b8bbe;
+}
