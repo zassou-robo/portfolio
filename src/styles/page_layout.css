@@ -1,4 +1,8 @@
 .header{
     background-color: var(--main-bg-color);
     display: flex;
+    text-align: center;
+}
+.footer{
+    text-align: center;
 }
