@@ -1,7 +1,14 @@
+/*=======header======*/
 .header{
     background-color: var(--main-bg-color);
+    padding: 20px;
+    top:0;
     display: flex;
     text-align: center;
+    position: fixed;
+}
+.main{
+    margin: 20px;
 }
 .footer{
     text-align: center;
