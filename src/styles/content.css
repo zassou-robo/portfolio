@@ -5,6 +5,13 @@
     border-radius: 10px;
     display: inline-block;
 }
+.skill_button{
+    width:100px;
+    height:100px;
+    padding:0px;
+    border:none;
+    background:none;
+}
 .html{
     background-color: #f54927;
 }
