@@ -6,10 +6,35 @@
     display: flex;
     text-align: center;
     position: fixed;
+    z-index: 1000;
 }
+
+
+
 .main{
     margin: 20px;
 }
+
+
+
 .footer{
     text-align: center;
+}
+
+/*=======head sections======*/
+.header_left{
+    margin:0px 500px 0px 40px;
+}
+.head_content{
+    /* margin:40px; */
+}
+
+/*=======main sections======*/
+.top_favicon{
+    width: 200px;
+    height: 200px;
+}
+#aboutme,#career,#skills,#projects,#contact{
+    margin-top:80px;
+    scroll-margin-top:80px;
 }

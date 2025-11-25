@@ -1,0 +1,2 @@
+<head> fontawesome ver確認
+<body><footer> AllRightsの年確認
