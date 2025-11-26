@@ -1,0 +1,2 @@
+https://open.shonan.bunkyo.ac.jp/~ohtan/kouza/css-margin.html
+margin,paddingなどがわかりやすい
