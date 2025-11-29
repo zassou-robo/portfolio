@@ -57,9 +57,13 @@
     });
   });
 
-  // Close buttons and overlay
+  // Close buttons, OK button, and overlay
   document.addEventListener('click', (e) => {
     if (e.target.matches('.modal__close')) {
+      const modal = e.target.closest('.modal');
+      closeModal(modal);
+    }
+    if (e.target.matches('.modal__action')) {
       const modal = e.target.closest('.modal');
       closeModal(modal);
     }
