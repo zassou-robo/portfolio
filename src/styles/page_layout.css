@@ -13,6 +13,8 @@
 
 .main{
     margin: 20px;
+    text-align: center;
+    padding-top: 80px;
 }
 
 
@@ -34,4 +36,13 @@
 #aboutme,#career,#skills,#projects,#contact{
     margin-top:80px;
     scroll-margin-top:80px;
+}
+
+/*=====aboutme,skills.contact sections======*/
+.aboutme .skills .contact{
+    background-color: var(--main-bg-color);
+}
+/*=========career,projects sections======*/
+.career .projects{
+    background-color: var(--sub-bg-color);
 }
