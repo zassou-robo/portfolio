@@ -39,10 +39,10 @@
 }
 
 /*=====aboutme,skills.contact sections======*/
-.aboutme .skills .contact{
-    background-color: var(--main-bg-color);
+.aboutme, .skills, .contact{
+    background-color: #ffffff;
 }
 /*=========career,projects sections======*/
-.career .projects{
-    background-color: var(--sub-bg-color);
+.career, .projects, .footer{
+    background-color: #DDDDDD;
 }
