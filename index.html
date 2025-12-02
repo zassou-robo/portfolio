@@ -288,15 +288,36 @@
                     </div>
                 </div>
             </div>
-            <img src="./src/assets/maketen_icon.png" class="MakeTenJudgement project_icon" alt="loading..." loading="lazy">
-            <p>MakeTenJudgement</p>
-            <img src="./src/assets/maketen_explain.png" class="MakeTenJudgement project_img" alt="loading..." loading="lazy">
-            <p>MakeTenJudgement_explain</p>
-            <img src="./src/assets/maketen_code_one.png" class="MakeTenJudgement project_img" alt="loading..." loading="lazy">
-            <p>MakeTenJudgement_code_one</p>
-            <img src="./src/assets/maketen_code_two.png" class="MakeTenJudgement project_img" alt="loading..." loading="lazy">
-            <p>MakeTenJudgement_code_two</p>
-            <a href="https://github.com/zassou-robo/Colab_FreeHomework"> MakeTenJudgementへのリンク</a>
+            <p><button class="project_modal_open" data-modal-target="#maketenmodal">
+                <img src="./src/assets/maketen_icon.png" class="MakeTenJudgement project_icon" alt="loading..." loading="lazy">
+            </button>
+            <div class="modal" id="maketenmodal" role="dialog" aria-modal="true" aria-labelledby="MakeTenJudgement" aria-hidden="true">
+                <div class="modal__overlay" data-modal-overlay></div>
+                <div class="modal__dialog" role="document">
+                    <header class="modal__header">
+                        <h3 id="MakeTenJudgement">MakeTenJudgement</h3>
+                        <button class="modal__close" aria-label="閉じる">&times;</button>
+                    </header>
+                    <div class="modal__content">
+                        <h4>プロジェクト概要</h4>
+                        <p>make ten と呼ばれる四則演算と数字の入れ替えのみを用いて10を作るゲームを解くシステムです。Google Colaboratory上で動作します。</p>
+                        <h4>使用技術</h4>
+                        <p>Python, Google Colaboratory</p>
+                        <h4>役割</h4>
+                        <p>メイン開発者</p>
+                        <p>MakeTenJudgement</p>
+                        <img src="./src/assets/maketen_explain.png" class="MakeTenJudgement project_img" alt="loading..." loading="lazy">
+                        <p>MakeTenJudgement_explain</p>
+                        <img src="./src/assets/maketen_code_one.png" class="MakeTenJudgement project_img" alt="loading..." loading="lazy">
+                        <p>MakeTenJudgement_code_one</p>
+                        <img src="./src/assets/maketen_code_two.png" class="MakeTenJudgement project_img" alt="loading..." loading="lazy">
+                        <p>MakeTenJudgement_code_two</p>
+                        <a href="https://github.com/zassou-robo/Colab_FreeHomework"> MakeTenJudgementへのリンク</a>
+                        <button class="modal__action">OK</button>
+                    </div>
+                </div>
+            </div>
+            </p>
         </div>
         <div class="contact" id="contact">
             <h2>Contact</h2>
