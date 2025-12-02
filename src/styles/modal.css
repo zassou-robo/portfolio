@@ -41,6 +41,8 @@
 }
 .modal__content {
   padding: 16px;
+  max-height: 60vh;
+  overflow-y: auto;
 }
 
 /* 閉じるボタン */

@@ -1,6 +1,6 @@
 // シンプルなモーダル制御（focus trapは簡易実装）
 (function(){
-  const openButtons = document.querySelectorAll('.skill_modal_open');
+  const openButtons = document.querySelectorAll('.skill_modal_open, .project_modal_open');
   const body = document.body;
   let activeModal = null;
   let lastFocused = null;

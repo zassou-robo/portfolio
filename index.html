@@ -31,8 +31,9 @@
         <div class="aboutme" id="aboutme">
             <h2>About Me</h2>
             <img src="./src/assets/favicon.ico" class="top_favicon">
-            <p>大阪公立大学工業高等専門学校　二年　知能情報コース</p>
-            <p>zassou</p>
+            <p>大阪公立大学工業高等専門学校</p>
+            <a>　二年　知能情報コース</a>
+            <h2>zassou</h2>
         </div>
         <div class="career" id="career">
             <h2>Career</h2>
@@ -259,16 +260,34 @@
         </div>
         <div class="projects" id="projects">
             <h2>Projects</h2>
-            <img src="./src/assets/NullTasker_icon.png" class="NullTasker project_icon" alt="loading..." loading="lazy">
-            <p>NullTasker</p>
-            <img src="./src/assets/NullTasker_calendar.png" class="NullTasker project_img" alt="loading..." loading="lazy">
-            <p>NullTasker_calendar</p>
-            <img src="./src/assets/NullTasker_settings.png" class="NullTasker project_img" alt="loading..." loading="lazy">
-            <p>NullTasker_settings</p>
-            <img src="./src/assets/NullTasker_task.png" class="NullTasker project_img" alt="loading..." loading="lazy">
-            <p>NullTasker_task</p>
-            <a href="https://github.com/Team-Nullpo">NullTaskerへのリンク</a>
-            <p></p>
+            <button class="project_modal_open" data-modal-target="#nulltaskermodal">
+                <img src="./src/assets/NullTasker_icon.png" class="NullTasker project_icon" alt="loading..." loading="lazy">
+            </button>
+            <div class="modal" id="nulltaskermodal" role="dialog" aria-modal="true" aria-labelledby="NullTasker" aria-hidden="true">
+                <div class="modal__overlay" data-modal-overlay></div>
+                <div class="modal__dialog" role="document">
+                    <header class="modal__header">
+                        <h3 id="NullTasker">NullTasker</h3>
+                        <button class="modal__close" aria-label="閉じる">&times;</button>
+                    </header>
+                    <div class="modal__content">
+                        <h4>プロジェクト概要</h4>
+                        <p>チケット式タスク管理システム　カレンダー、ガントチャートを用いて視覚的なタスク管理を可能にします</p>
+                        <h4>使用技術</h4>
+                        <p>HTML, CSS, JavaScript,Node.js</p>
+                        <h4>役割</h4>
+                        <p>デバッガー</p>
+                        <img src="./src/assets/NullTasker_calendar.png" class="NullTasker project_img" alt="loading..." loading="lazy">
+                        <p>NullTasker_calendar</p>
+                        <img src="./src/assets/NullTasker_settings.png" class="NullTasker project_img" alt="loading..." loading="lazy">
+                        <p>NullTasker_settings</p>
+                        <img src="./src/assets/NullTasker_task.png" class="NullTasker project_img" alt="loading..." loading="lazy">
+                        <p>NullTasker_task</p>
+                        <a href="https://github.com/Team-Nullpo">NullTaskerへのリンク</a>
+                        <button class="modal__action">OK</button>
+                    </div>
+                </div>
+            </div>
             <img src="./src/assets/maketen_icon.png" class="MakeTenJudgement project_icon" alt="loading..." loading="lazy">
             <p>MakeTenJudgement</p>
             <img src="./src/assets/maketen_explain.png" class="MakeTenJudgement project_img" alt="loading..." loading="lazy">
