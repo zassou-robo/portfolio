@@ -46,3 +46,64 @@
     width: 480px;
     height:270px;
 }
+
+/* ============ レスポンシブデザイン ============ */
+/* モバイル: 0～767px */
+@media (max-width: 767px) {
+  .skill_lang {
+    width: 60px;
+    height: 60px;
+    padding: 5px;
+    margin: 5px;
+  }
+  
+  .project_img,
+  .project_icon {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    margin: 10px 0;
+  }
+  
+  .frontend, .backend, .devtool, .other {
+    margin: 10px 0;
+  }
+  
+  .frontend h3, .backend h3, .devtool h3, .other h3 {
+    font-size: 16px;
+    margin-top: 15px;
+  }
+}
+
+/* タブレット: 768px～1023px */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .skill_lang {
+    width: 80px;
+    height: 80px;
+    padding: 8px;
+    margin: 8px;
+  }
+  
+  .project_img,
+  .project_icon {
+    width: calc(100% - 20px);
+    max-width: 400px;
+    height: auto;
+    margin: 15px 10px;
+  }
+}
+
+/* デスクトップ: 1024px～ */
+@media (min-width: 1024px) {
+  .skill_lang {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+  }
+  
+  .project_img,
+  .project_icon {
+    width: 480px;
+    height: 270px;
+  }
+}

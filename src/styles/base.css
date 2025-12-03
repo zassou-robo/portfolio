@@ -27,3 +27,18 @@ body{
     /* color: var(--main-color); */
     line-height: 1.6;
 }
+
+/* ============ レスポンシブデザイン ============ */
+/* モバイル: 0～767px */
+@media (max-width: 767px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+/* タブレット～デスクトップ: 768px～ */
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}

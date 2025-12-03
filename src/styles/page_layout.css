@@ -50,3 +50,91 @@
 .career, .projects, .footer{
     background-color: #DDDDDD;
 }
+
+/* ============ レスポンシブデザイン ============ */
+/* モバイル: 0～767px */
+@media (max-width: 767px) {
+  .header {
+    flex-direction: column;
+    padding: 12px;
+    align-items: flex-start;
+  }
+  
+  .header_left {
+    margin: 0;
+    font-size: 18px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  /* nav {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+  } */
+  
+  nav a {
+    font-size: 14px;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .main {
+    margin: 10px;
+    padding-top: 75px;
+  }
+  
+  .top_favicon {
+    width: 120px;
+    height: 120px;
+  }
+  
+  #aboutme, #career, #skills, #projects, #contact {
+    margin-top: 40px;
+    scroll-margin-top: 120px;
+  }
+  
+  h2 {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  
+  h3 {
+    font-size: 16px;
+  }
+}
+
+/* タブレット: 768px～1023px */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .header_left {
+    margin: 0px 200px 0px 20px;
+  }
+  
+  .main {
+    margin: 15px;
+    padding-top: 80px;
+  }
+  
+  .top_favicon {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+/* デスクトップ: 1024px～ */
+@media (min-width: 1024px) {
+  .header_left {
+    margin: 0px 500px 0px 40px;
+  }
+  
+  .main {
+    margin: 20px;
+    padding-top: 80px;
+  }
+  
+  .top_favicon {
+    width: 200px;
+    height: 200px;
+  }
+}

@@ -62,3 +62,71 @@
   transform: translateY(0);
   opacity: 1;
 }
+
+/* ============ レスポンシブデザイン ============ */
+/* モバイル: 0～767px */
+@media (max-width: 767px) {
+  .modal__dialog {
+    max-width: calc(100% - 20px);
+    width: 100%;
+    margin: 10px;
+  }
+  
+  .modal__header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  
+  .modal__header h3 {
+    font-size: 18px;
+    width: 100%;
+  }
+  
+  .modal__close {
+    align-self: flex-end;
+    font-size: 20px;
+  }
+  
+  .modal__content {
+    max-height: 70vh;
+    font-size: 14px;
+    padding: 12px;
+  }
+  
+  .modal__content h4 {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  .modal__content p {
+    font-size: 13px;
+  }
+}
+
+/* タブレット: 768px～1023px */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .modal__dialog {
+    max-width: calc(100% - 40px);
+    margin: 20px;
+  }
+  
+  .modal__content {
+    max-height: 65vh;
+    font-size: 15px;
+  }
+}
+
+/* デスクトップ: 1024px～ */
+@media (min-width: 1024px) {
+  .modal__dialog {
+    max-width: 720px;
+    width: calc(100% - 40px);
+    margin: 16px;
+  }
+  
+  .modal__content {
+    max-height: 60vh;
+    font-size: 16px;
+  }
+}
