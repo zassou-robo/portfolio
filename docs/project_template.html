@@ -1,0 +1,103 @@
+<!-- プロジェクト追加用ひな形 -->
+<!-- 以下のコードを index.html の <div class="projects"> セクション内にコピー＆ペーストしてください -->
+
+<!-- Step 1: プロジェクトアイコンボタン -->
+<button class="project_modal_open" data-modal-target="#[PROJECT_ID]modal">
+    <img src="./src/assets/[PROJECT_ICON].png" class="[PROJECT_CLASS] project_icon" alt="loading..."
+        loading="lazy">
+</button>
+
+<!-- Step 2: プロジェクト詳細モーダル -->
+<div class="modal" id="[PROJECT_ID]modal" role="dialog" aria-modal="true" aria-labelledby="[PROJECT_NAME]"
+    aria-hidden="true">
+    <div class="modal__overlay" data-modal-overlay></div>
+    <div class="modal__dialog" role="document">
+        <header class="modal__header">
+            <h3 id="[PROJECT_NAME]">[PROJECT_NAME]</h3>
+            <button class="modal__close" aria-label="閉じる">&times;</button>
+        </header>
+        <div class="modal__content">
+            <h4>プロジェクト概要</h4>
+            <p>[PROJECT_DESCRIPTION]</p>
+            <h4>使用技術</h4>
+            <p>[TECHNOLOGIES]</p>
+            <h4>役割</h4>
+            <p>[ROLE]</p>
+            
+            <!-- プロジェクト画像（オプション） -->
+            <img src="./src/assets/[IMAGE_1].png" class="[PROJECT_CLASS] project_img" alt="loading..."
+                loading="lazy">
+            <p>[IMAGE_1_DESCRIPTION]</p>
+            
+            <img src="./src/assets/[IMAGE_2].png" class="[PROJECT_CLASS] project_img" alt="loading..."
+                loading="lazy">
+            <p>[IMAGE_2_DESCRIPTION]</p>
+            
+            <!-- リンク -->
+            <a href="[PROJECT_URL]" target="_blank" rel="noreferrer noopener">[PROJECT_NAME]へのリンク</a>
+            
+            <button class="modal__action">OK</button>
+        </div>
+    </div>
+</div>
+
+
+<!-- ===== 記入例 ===== -->
+
+<!-- Example: -->
+<button class="project_modal_open" data-modal-target="#examplemodal">
+    <img src="./src/assets/example_icon.png" class="Example project_icon" alt="loading..."
+        loading="lazy">
+</button>
+
+<div class="modal" id="examplemodal" role="dialog" aria-modal="true" aria-labelledby="Example"
+    aria-hidden="true">
+    <div class="modal__overlay" data-modal-overlay></div>
+    <div class="modal__dialog" role="document">
+        <header class="modal__header">
+            <h3 id="Example">Example Project</h3>
+            <button class="modal__close" aria-label="閉じる">&times;</button>
+        </header>
+        <div class="modal__content">
+            <h4>プロジェクト概要</h4>
+            <p>このプロジェクトは○○を実装したものです</p>
+            <h4>使用技術</h4>
+            <p>HTML, CSS, JavaScript</p>
+            <h4>役割</h4>
+            <p>メイン開発者</p>
+            
+            <img src="./src/assets/example_image1.png" class="Example project_img" alt="loading..."
+                loading="lazy">
+            <p>Example_image1</p>
+            
+            <img src="./src/assets/example_image2.png" class="Example project_img" alt="loading..."
+                loading="lazy">
+            <p>Example_image2</p>
+            
+            <a href="https://github.com/example/project" target="_blank" rel="noreferrer noopener">Exampleへのリンク</a>
+            
+            <button class="modal__action">OK</button>
+        </div>
+    </div>
+</div>
+
+
+<!-- ===== 説明 ===== -->
+
+記入項目：
+- [PROJECT_ID]: プロジェクトの一意のID（モーダルのIDとして使用。小文字で「projectname」など）
+- [PROJECT_NAME]: プロジェクト名（例：「NullTasker」）
+- [PROJECT_ICON]: プロジェクトアイコン画像ファイル名（./src/assets/ に配置）
+- [PROJECT_CLASS]: CSSクラス名（プロジェクト用のスタイル指定）
+- [PROJECT_DESCRIPTION]: プロジェクトの説明文
+- [TECHNOLOGIES]: 使用技術（カンマ区切り）
+- [ROLE]: プロジェクトでの役割
+- [IMAGE_1], [IMAGE_2]: スクリーンショット画像（オプション。不要な場合は削除）
+- [IMAGE_1_DESCRIPTION]: 画像の説明
+- [PROJECT_URL]: GitHubリンクなどのURL
+
+使用方法：
+1. このひな形の「===== 記入例 ===== 」セクションをコピー
+2. [PROJECT_NAME] などのプレースホルダーを実際の値に置き換える
+3. index.html の <div class="projects"> セクションに貼り付ける
+4. アイコン画像を ./src/assets/ に配置する
