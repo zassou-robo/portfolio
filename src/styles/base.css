@@ -44,3 +44,44 @@ body {
   --color-bg: #121212;
   --color-text-primary: #eeeeee;
 }
+
+
+
+/* =========================
+   Modern CSS Reset
+========================= */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+figure {
+  margin: 0;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
