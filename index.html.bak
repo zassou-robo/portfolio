@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="zassou's portfolio website showcasing web development projects and skills.">
+    <meta name="keywords" content="zassou, portfolio, web developer, projects">
+    <meta name="author" content="zassou">
+    <title>zassou | Portfolio</title>
+    <link rel="icon" href="./src/assets/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="./src/assets/zassou-icon.jpg">
+    <link rel="stylesheet" href="./src/styles/base.css">
+    <link rel="stylesheet" href="./src/styles/page_layout.css">
+    <link rel="stylesheet" href="./src/styles/content.css">
+    <link rel="stylesheet" href="./src/styles/modal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://use.fontawesome.com/releases/v7.1.0/css/all.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="header">
+        <h1 class="header_left">zassou's Portfolio</h1>
+        <nav>
+            <a href="#aboutme" class="head_content">About Me</a>
+            <a href="#career" class="head_content">Career</a>
+            <a href="#skills" class="head_content">Skills</a>
+            <a href="#projects" class="head_content">Projects</a>
+            <a href="#contact" class="head_content">Contact</a>
+        </nav>
+    </div>
+    <div class="main">
+        <div class="aboutme" id="aboutme">
+            <h2>About Me</h2>
+            <img src="./src/assets/favicon.ico" class="top_favicon">
+            <p>大阪公立大学工業高等専門学校</p>
+            <a>　二年　知能情報コース</a>
+            <h2>zassou</h2>
+        </div>
+        <div class="career" id="career">
+            <h2>Career</h2>
+            <p>2024/04 大阪公立大学工業高等専門学校入学</p>
+            <p>2024/04 ろぼっと倶楽部入部</p>
+            <p>2024/09 キャチロボバトルコンテスト　Bチームリーダーとして出場　予選敗退</p>
+            <p>2025/03 関西春ロボコン出場　予選敗退</p>
+            <p>2025/09 NHK高専ロボコン近畿地区大会　Bチームリーダーとして出場　田中貴金属グループ賞受賞</p>
+            <p>2025/12 廃炉創造ロボコン出場　三菱重工業株式会社特別賞受賞</p>
+            <p>2026/01 総合課題実習　ハッカソンで一位</p>
+        </div>
+        <div class="skills" id="skills">
+            <h2>Skills</h2>
+            <div class="frontend">
+                <h3>Frontend</h3>
+                <button class="skill_modal_open" data-modal-target="#htmlmodal">
+                    <img src="./src/assets/html.png" class="html skill_lang">
+                </button>
+                <div class="modal" id="htmlmodal" role="dialog" aria-modal="true" aria-labelledby="HTML"
+                    aria-hidden="true">
+                    <div class="modal__overlay" data-modal-overlay></div>
+                    <div class="modal__dialog" role="document">
+                        <header class="modal__header">
+                            <h3 id="HTML">HTML</h3>
+                            <button class="modal__close" aria-label="閉じる">&times;</button>
+                        </header>
+                        <div class="modal__content">
+                            <h4>使用用途</h4>
+                            <p>Webアプリケーションの作成に利用</p>
+                            <h4>使用頻度</h4>
+                            <p>日常的に利用</p>
+                            <button class="modal__action">OK</button>
+                        </div>
+                    </div>
+                </div>
+                <a>HTML</a>
+                <button class="skill_modal_open" data-modal-target="#cssmodal">
+                    <img src="./src/assets/css.png" class="css skill_lang">
+                </button>
+                <div class="modal" id="cssmodal" role="dialog" aria-modal="true" aria-labelledby="CSS"
+                    aria-hidden="true">
+                    <div class="modal__overlay" data-modal-overlay></div>
+                    <div class="modal__dialog" role="document">
+                        <header class="modal__header">
+                            <h3 id="CSS">CSS</h3>
+                            <button class="modal__close" aria-label="閉じる">&times;</button>
+                        </header>
+                        <div class="modal__content">
+                            <h4>使用用途</h4>
+                            <p>Webアプリケーションのスタイリングに利用</p>
+                            <h4>使用頻度</h4>
+                            <p>日常的に利用</p>
+                            <button class="modal__action">OK</button>
+                        </div>
+                    </div>
+                </div>
+                <a>CSS</a>
+                <button class="skill_modal_open" data-modal-target="#jsmodal">
+                    <img src="./src/assets/javascript.png" class="javascript skill_lang">
+                </button>
+                <div class="modal" id="jsmodal" role="dialog" aria-modal="true" aria-labelledby="JavaScript"
+                    aria-hidden="true">
+                    <div class="modal__overlay" data-modal-overlay></div>
+                    <div class="modal__dialog" role="document">
+                        <header class="modal__header">
+                            <h3 id="JavaScript">JavaScript</h3>
+                            <button class="modal__close" aria-label="閉じる">&times;</button>
+                        </header>
+                        <div class="modal__content">
+                            <h4>使用用途</h4>
+                            <p>Webアプリケーションの動的な機能実装に利用</p>
+                            <h4>使用頻度</h4>
+                            <p>1~2日/週</p>
+                            <button class="modal__action">OK</button>
+                        </div>
+                    </div>
+                </div>
+                <a>JavaScript</a>
+            </div>
+            <div class="backend">
+                <h3>Backend</h3>
+                <button class="skill_modal_open" data-modal-target="#cppmodal">
+                    <img src="./src/assets/cpp.png" class="cpp skill_lang">
+                </button>
+                <div class="modal" id="cppmodal" role="dialog" aria-modal="true" aria-labelledby="CPP"
+                    aria-hidden="true">
+                    <div class="modal__overlay" data-modal-overlay></div>
+                    <div class="modal__dialog" role="document">
+                        <header class="modal__header">
+                            <h3 id="CPP">C++</h3>
+                            <button class="modal__close" aria-label="閉じる">&times;</button>
+                        </header>
+                        <div class="modal__content">
+                            <h4>使用用途</h4>
+                            <p>ロボットの制御プログラムに利用</p>
+                            <h4>使用頻度</h4>
+                            <p>4~5日/週</p>
+                            <button class="modal__action">OK</button>
+                        </div>
+                    </div>
+                </div>
+                <a>C++</a>
+                <button class="skill_modal_open" data-modal-target="#pythonmodal">
+                    <img src="./src/assets/python.png" class="python skill_lang">
+                </button>
+                <div class="modal" id="pythonmodal" role="dialog" aria-modal="true" aria-labelledby="Python"
+                    aria-hidden="true">
+                    <div class="modal__overlay" data-modal-overlay></div>
+                    <div class="modal__dialog" role="document">
+                        <header class="modal__header">
+                            <h3 id="Python">Python</h3>
+                            <button class="modal__close" aria-label="閉じる">&times;</button>
+                        </header>
+                        <div class="modal__content">
+                            <h4>使用用途</h4>
+                            <p>データ処理やスクリプト作成、機械学習に利用</p>
+                            <h4>使用頻度</h4>
+                            <p>1~2日/週</p>
+                            <button class="modal__action">OK</button>
+                        </div>
+                    </div>
+                </div>
+                <a>Python</a>
+            </div>
+            <div class="devtool">
+                <h3>Development Tools</h3>
+                <button class="skill_modal_open" data-modal-target="#gitmodal">
+                    <img src="./src/assets/git.png" class="git skill_lang">
+                </button>
+                <div class="modal" id="gitmodal" role="dialog" aria-modal="true" aria-labelledby="Git"
+                    aria-hidden="true">
+                    <div class="modal__overlay" data-modal-overlay></div>
+                    <div class="modal__dialog" role="document">
+                        <header class="modal__header">
+                            <h3 id="Git">Git</h3>
+                            <button class="modal__close" aria-label="閉じる">&times;</button>
+                        </header>
+                        <div class="modal__content">
+                            <h4>使用用途</h4>
+                            <p>バージョン管理システムとしてプロジェクトの管理に利用</p>
+                            <h4>使用頻度</h4>
+                            <p>日常的に利用</p>
+                            <button class="modal__action">OK</button>
+                        </div>
+                    </div>
+                </div>
+                <a>Git</a>
+                <button class="skill_modal_open" data-modal-target="#githubmodal">
+                    <img src="./src/assets/github.png" class="github skill_lang">
+                </button>
+                <div class="modal" id="githubmodal" role="dialog" aria-modal="true" aria-labelledby="GitHub"
+                    aria-hidden="true">
+                    <div class="modal__overlay" data-modal-overlay></div>
+                    <div class="modal__dialog" role="document">
+                        <header class="modal__header">
+                            <h3 id="GitHub">GitHub</h3>
+                            <button class="modal__close" aria-label="閉じる">&times;</button>
+                        </header>
+                        <div class="modal__content">
+                            <h4>使用用途</h4>
+                            <p>ソースコード管理とチーム開発のためのプラットフォームとして利用</p>
+                            <h4>使用頻度</h4>
+                            <p>日常的に利用</p>
+                            <button class="modal__action">OK</button>
+                        </div>
+                    </div>
+                </div>
+                <a>GitHub</a>
+                <button class="skill_modal_open" data-modal-target="#vscodemodal">
+                    <img src="./src/assets/vscode.png" class="vscode skill_lang">
+                </button>
+                <div class="modal" id="vscodemodal" role="dialog" aria-modal="true" aria-labelledby="VSCode"
+                    aria-hidden="true">
+                    <div class="modal__overlay" data-modal-overlay></div>
+                    <div class="modal__dialog" role="document">
+                        <header class="modal__header">
+                            <h3 id="VSCode">VS Code</h3>
+                            <button class="modal__close" aria-label="閉じる">&times;</button>
+                        </header>
+                        <div class="modal__content">
+                            <h4>使用用途</h4>
+                            <p>メインの開発エディタとして利用</p>
+                            <h4>使用頻度</h4>
+                            <p>日常的に利用</p>
+                            <button class="modal__action">OK</button>
+                        </div>
+                    </div>
+                </div>
+                <a>VS Code</a>
+                <button class="skill_modal_open" data-modal-target="#typstmodal">
+                    <img src="./src/assets/typst.png" class="typst skill_lang">
+                </button>
+                <div class="modal" id="typstmodal" role="dialog" aria-modal="true" aria-labelledby="Typst"
+                    aria-hidden="true">
+                    <div class="modal__overlay" data-modal-overlay></div>
+                    <div class="modal__dialog" role="document">
+                        <header class="modal__header">
+                            <h3 id="Typst">Typst</h3>
+                            <button class="modal__close" aria-label="閉じる">&times;</button>
+                        </header>
+                        <div class="modal__content">
+                            <h4>使用用途</h4>
+                            <p>ドキュメント作成とレポート作成に利用</p>
+                            <h4>使用頻度</h4>
+                            <p>1~2日/週</p>
+                            <button class="modal__action">OK</button>
+                        </div>
+                    </div>
+                </div>
+                <a>Typst</a>
+            </div>
+            <div class="other">
+                <h3>Other</h3>
+                <button class="skill_modal_open" data-modal-target="#solidworksmodal">
+                    <img src="./src/assets/solidworks.png" class="solidworks skill_lang">
+                </button>
+                <div class="modal" id="solidworksmodal" role="dialog" aria-modal="true" aria-labelledby="SolidWorks"
+                    aria-hidden="true">
+                    <div class="modal__overlay" data-modal-overlay></div>
+                    <div class="modal__dialog" role="document">
+                        <header class="modal__header">
+                            <h3 id="SolidWorks">SolidWorks</h3>
+                            <button class="modal__close" aria-label="閉じる">&times;</button>
+                        </header>
+                        <div class="modal__content">
+                            <h4>使用用途</h4>
+                            <p>ロボットの設計や3Dモデリングに利用</p>
+                            <h4>使用頻度</h4>
+                            <p>0~1日/週</p>
+                            <button class="modal__action">OK</button>
+                        </div>
+                    </div>
+                </div>
+                <a>SolidWorks</a>
+            </div>
+        </div>
+        <div class="projects" id="projects">
+            <h2>Projects</h2>
+            <button class="project_modal_open" data-modal-target="#nulltaskermodal">
+                <img src="./src/assets/NullTasker_icon.png" class="NullTasker project_icon" alt="loading..."
+                    loading="lazy">
+            </button>
+            <div class="modal" id="nulltaskermodal" role="dialog" aria-modal="true" aria-labelledby="NullTasker"
+                aria-hidden="true">
+                <div class="modal__overlay" data-modal-overlay></div>
+                <div class="modal__dialog" role="document">
+                    <header class="modal__header">
+                        <h3 id="NullTasker">NullTasker</h3>
+                        <button class="modal__close" aria-label="閉じる">&times;</button>
+                    </header>
+                    <div class="modal__content">
+                        <h4>プロジェクト概要</h4>
+                        <p>チケット式タスク管理システム　カレンダー、ガントチャートを用いて視覚的なタスク管理を可能にします</p>
+                        <h4>使用技術</h4>
+                        <p>HTML, CSS, JavaScript,Node.js</p>
+                        <h4>役割</h4>
+                        <p>デバッガー</p>
+                        <img src="./src/assets/NullTasker_calendar.png" class="NullTasker project_img" alt="loading..."
+                            loading="lazy">
+                        <p>NullTasker_calendar</p>
+                        <img src="./src/assets/NullTasker_settings.png" class="NullTasker project_img" alt="loading..."
+                            loading="lazy">
+                        <p>NullTasker_settings</p>
+                        <img src="./src/assets/NullTasker_task.png" class="NullTasker project_img" alt="loading..."
+                            loading="lazy">
+                        <p>NullTasker_task</p>
+                        <a href="https://github.com/Team-Nullpo">NullTaskerへのリンク</a>
+                        <button class="modal__action">OK</button>
+                    </div>
+                </div>
+            </div>
+            <p><button class="project_modal_open" data-modal-target="#maketenmodal">
+                    <img src="./src/assets/maketen_icon.png" class="MakeTenJudgement project_icon" alt="loading..."
+                        loading="lazy">
+                </button>
+            <div class="modal" id="maketenmodal" role="dialog" aria-modal="true" aria-labelledby="MakeTenJudgement"
+                aria-hidden="true">
+                <div class="modal__overlay" data-modal-overlay></div>
+                <div class="modal__dialog" role="document">
+                    <header class="modal__header">
+                        <h3 id="MakeTenJudgement">MakeTenJudgement</h3>
+                        <button class="modal__close" aria-label="閉じる">&times;</button>
+                    </header>
+                    <div class="modal__content">
+                        <h4>プロジェクト概要</h4>
+                        <p>make ten と呼ばれる四則演算と数字の入れ替えのみを用いて10を作るゲームを解くシステム　Google Colaboratory上で動作します。</p>
+                        <h4>使用技術</h4>
+                        <p>Python, Google Colaboratory</p>
+                        <h4>役割</h4>
+                        <p>メイン開発者</p>
+                        <p>MakeTenJudgement</p>
+                        <img src="./src/assets/maketen_explain.png" class="MakeTenJudgement project_img"
+                            alt="loading..." loading="lazy">
+                        <p>MakeTenJudgement_explain</p>
+                        <img src="./src/assets/maketen_code_one.png" class="MakeTenJudgement project_img"
+                            alt="loading..." loading="lazy">
+                        <p>MakeTenJudgement_code_one</p>
+                        <img src="./src/assets/maketen_code_two.png" class="MakeTenJudgement project_img"
+                            alt="loading..." loading="lazy">
+                        <p>MakeTenJudgement_code_two</p>
+                        <a href="https://github.com/zassou-robo/Colab_FreeHomework"> MakeTenJudgementへのリンク</a>
+                        <button class="modal__action">OK</button>
+                    </div>
+                </div>
+            </div>
+            </p>
+        </div>
+        <button class="project_modal_open" data-modal-target="#pid_log_analyzermodal">
+            <img src="./src/assets/PID_Log_Analyzer_logo_.png" class="PID_Log_Analyzer project_icon" alt="loading..."
+                loading="lazy">
+        </button>
+        <div class="modal" id="pid_log_analyzermodal" role="dialog" aria-modal="true" aria-labelledby="PID_Log_Analyzer"
+            aria-hidden="true">
+            <div class="modal__overlay" data-modal-overlay></div>
+            <div class="modal__dialog" role="document">
+                <header class="modal__header">
+                    <h3 id="PID_Log_Analyzer">PID Log Analyzer</h3>
+                    <button class="modal__close" aria-label="閉じる">&times;</button>
+                </header>
+                <div class="modal__content">
+                    <h4>プロジェクト概要</h4>
+                    <p>PIDログを解析、またはシミュレーションを行い可視化するプログラム</p>
+                    <h4>使用技術</h4>
+                    <p>Python, Pandas, NumPy,PiSide6</p>
+                    <h4>役割</h4>
+                    <p>開発者</p>
+                    <img src="./src/assets/pid_simulation.png" class="PID_Log_Analyzer project_img" alt="loading..."
+                        loading="lazy">
+                    <p>PID_Log_Analyzer_simulation</p>
+                    <img src="./src/assets/simration_ui__.png" class="PID_Log_Analyzer project_img" alt="loading..."
+                        loading="lazy">
+                    <p>PID_Log_Analyzer_simulation_ui</p>
+                    <img src="./src/assets/switch_ui_first__.png" class="PID_Log_Analyzer project_img" alt="loading..."
+                        loading="lazy">
+                    <p>PID_Log_Analyzer_switch_ui</p>
+                    <a href="https://github.com/zassou-robo/PID-Log-Analyzer">PID Log Analyzerへのリンク</a>
+                    <button class="modal__action">OK</button>
+                </div>
+            </div>
+        </div>
+        <div class="contact" id="contact">
+            <h2>Contact</h2>
+            <a>個人アカウント: zassou.sub*gmail.com</a>
+            <p>学校アカウント: ry24017r*st.omu.ac.jp</p>
+            <p>(※アカウント名は*を@に置き換えてください)</p>
+            <i class="fa-brands fa-square-twitter"></i>
+            <a href="https://x.com/zassou0604" target="_blank" rel="noreferrer noopener">Twitter: zassou @zassou0604</a>
+            <p><i class="fa-brands fa-square-github"></i></a>
+                <a href="https://github.com/zassou-robo" target="_blank" rel="noreferrer noopener">GitHub: zassou-robo
+                    @zassou-robo</a>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; 2026 zassou. All rights reserved.</p>
+    </div>
+    <script src="./src/scripts/modal.js"></script>
+</body>
+
+</html>
