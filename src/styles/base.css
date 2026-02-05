@@ -1,0 +1,46 @@
+:root {
+  /* === Colors === */
+  --color-bg: #f5f5f5;
+  --color-bg-surface: #ffffff;
+
+  --color-text-primary: #222222;
+  --color-text-secondary: #555555;
+
+  --color-border: #dddddd;
+  --color-accent: #007acc;
+
+  /* === Fonts === */
+  --font-base: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-heading: var(--font-base);
+
+  /* === Font sizes === */
+  --font-size-sm: 0.875rem;
+  /* 14px */
+  --font-size-md: 1rem;
+  /* 16px */
+  --font-size-lg: 1.25rem;
+  /* 20px */
+  --font-size-xl: 1.5rem;
+  /* 24px */
+
+  /* === Spacing === */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 32px;
+  --space-xl: 64px;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-bg);
+  color: var(--color-text-primary);
+  font-family: var(--font-base);
+  font-size: var(--font-size-md);
+  line-height: 1.6;
+}
+
+[data-theme="dark"] {
+  --color-bg: #121212;
+  --color-text-primary: #eeeeee;
+}
